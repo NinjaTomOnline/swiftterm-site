@@ -2,7 +2,7 @@
 
 This repository hosts the public SwiftTerm website for App Store Connect URLs.
 
-Expected GitHub Pages URLs:
+Live GitHub Pages URLs:
 
 - Marketing URL: `https://ninjatomonline.github.io/swiftterm-site/`
 - Support URL: `https://ninjatomonline.github.io/swiftterm-site/support.html`
@@ -17,7 +17,6 @@ Expected GitHub Pages URLs:
    ```
 
 2. Copy or push the contents of `/tmp/swiftterm-site` into this public repo.
-3. In GitHub, enable Pages with GitHub Actions as the source.
-4. Confirm the Pages deployment succeeds and enter the URLs above in App Store Connect.
+3. Confirm the Pages deployment succeeds and enter the URLs above in App Store Connect.
 
 If a custom domain is added later, update `robots.txt`, `sitemap.xml`, this README, and the App Store Connect URLs in the private app repo handoff docs.
