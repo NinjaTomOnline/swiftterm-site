@@ -1,0 +1,9 @@
+{
+  "name": "SwiftTerm",
+  "short_name": "SwiftTerm",
+  "description": "SSH and SFTP terminal client for iPhone and iPad.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b1117",
+  "theme_color": "#007aff"
+}

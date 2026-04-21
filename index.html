@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SwiftTerm is an iPhone and iPad SSH/SFTP terminal client with secure key management, terminal sessions, snippets, and privacy-first controls.">
+  <meta property="og:title" content="SwiftTerm">
+  <meta property="og:description" content="A professional SSH and SFTP terminal client for iPhone and iPad.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ninjatomonline.github.io/swiftterm-site/">
+  <title>SwiftTerm | SSH terminal for iPhone and iPad</title>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="SwiftTerm home">
+        <span class="brand-mark">ST</span>
+        <span>
+          <strong>SwiftTerm</strong>
+          <small>SSH, SFTP, snippets</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">iPhone and iPad terminal client</p>
+          <h1>SwiftTerm</h1>
+          <p class="lede">Manage SSH hosts, keys, terminal sessions, command snippets, and SFTP transfers from a clean native iOS workspace.</p>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/NinjaTomOnline/SwiftTerm">View project</a>
+            <a class="button secondary" href="support.html">Get support</a>
+            <a class="button secondary" href="privacy.html">Privacy policy</a>
+          </div>
+        </div>
+        <div class="terminal-card" aria-label="SwiftTerm terminal preview">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <strong>deploy@swiftterm</strong>
+          </div>
+          <pre><code>$ ssh deploy@swiftterm.local
+Connected with Ed25519 key
+$ tail -f /var/log/app.log
+200 GET /health
+200 POST /api/releases
+$ sftp uploads
+queued sync - 3 changes</code></pre>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="SwiftTerm features">
+        <article>
+          <h2>Hosts and keys</h2>
+          <p>Save host profiles, import or generate SSH keys, assign keys to hosts, and keep private key material in Keychain.</p>
+        </article>
+        <article>
+          <h2>Terminal sessions</h2>
+          <p>Open multi-session terminal workspaces with an interactive SwiftNIO SSH path and a deterministic mock engine for previews and tests.</p>
+        </article>
+        <article>
+          <h2>Files and sync</h2>
+          <p>Browse remote SFTP directories, upload local files, reuse iOS document bookmarks, and queue sync plans for larger workflows.</p>
+        </article>
+        <article>
+          <h2>Private by design</h2>
+          <p>Analytics are opt-in and sanitized. Hostnames, commands, key material, emails, and IP-like values are rejected from telemetry.</p>
+        </article>
+      </section>
+
+      <section class="split-section">
+        <div>
+          <p class="eyebrow">Architecture</p>
+          <h2>Built for a production handoff</h2>
+          <p>SwiftTerm uses dependency-injected SwiftUI stores, protocol-backed SSH/SFTP/StoreKit/analytics seams, and a generated Xcode project so production adapters can replace test doubles without rewriting the UI.</p>
+        </div>
+        <img src="screenshots/swiftterm-architecture.png" alt="SwiftTerm architecture diagram">
+      </section>
+    </main>
+  </div>
+</body>
+</html>
