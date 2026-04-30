@@ -1,0 +1,16 @@
+{
+  "name": "SwiftTerm",
+  "tagline": "A polished terminal companion for fast command notes and workflows.",
+  "category": "Tool",
+  "status": "Live",
+  "website": "https://swiftterm.app/",
+  "supportUrl": "",
+  "privacyUrl": "",
+  "appStoreUrl": "",
+  "icon": "https://raw.githubusercontent.com/NinjaTomOnline/swiftterm-site/main/assets/swiftterm-icon.svg",
+  "previewImage": "https://raw.githubusercontent.com/NinjaTomOnline/swiftterm-site/main/screenshots/swiftterm-architecture.png",
+  "previewImageAlt": "SwiftTerm project preview",
+  "accent": "#59F2C7",
+  "featured": true,
+  "sortOrder": 20
+}
