@@ -23,6 +23,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
+      - name: Audit hosted site
+        run: python3 .github/scripts/audit_hosted_site.py --hosted-root .
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:

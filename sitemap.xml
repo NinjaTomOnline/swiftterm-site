@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ninjatomonline.github.io/swiftterm-site/</loc>
+    <loc>https://swiftterm.app/</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
-    <loc>https://ninjatomonline.github.io/swiftterm-site/support.html</loc>
+    <loc>https://swiftterm.app/faq.html</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
   <url>
-    <loc>https://ninjatomonline.github.io/swiftterm-site/privacy.html</loc>
+    <loc>https://swiftterm.app/whats-new.html</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://swiftterm.app/press.html</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://swiftterm.app/support.html</loc>
+    <lastmod>2026-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://swiftterm.app/privacy.html</loc>
+    <lastmod>2026-05-01</lastmod>
   </url>
 </urlset>

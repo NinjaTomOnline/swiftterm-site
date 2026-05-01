@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ninjatomonline.github.io/swiftterm-site/sitemap.xml
+Sitemap: https://swiftterm.app/sitemap.xml

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SwiftTerm FAQ for SSH authentication, SFTP transfers, local shell behavior, subscriptions, privacy, and roadmap boundaries.">
+  <meta property="og:title" content="SwiftTerm FAQ">
+  <meta property="og:description" content="Answers about SwiftTerm SSH, SFTP, Keychain keys, local shell tools, privacy, subscriptions, and roadmap boundaries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swiftterm.app/faq.html">
+  <meta property="og:image" content="https://swiftterm.app/assets/swiftterm-social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>FAQ | SwiftTerm</title>
+  <link rel="canonical" href="https://swiftterm.app/faq.html">
+  <link rel="icon" href="screenshots/swiftterm-app-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="SwiftTerm home">
+        <img class="brand-icon" src="screenshots/swiftterm-app-icon.png" alt="">
+        <span>
+          <strong>SwiftTerm</strong>
+          <small>Native SSH, SFTP, snippets</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a aria-current="page" href="faq.html">FAQ</a>
+        <a href="whats-new.html">What's New</a>
+        <a href="press.html">Press</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero faq-hero">
+        <p class="eyebrow">FAQ</p>
+        <h1>Clear answers before you trust a terminal.</h1>
+        <p class="lede">SwiftTerm is built for real remote-access work, so the public FAQ keeps the product boundary as visible as the interface.</p>
+        <div class="button-row">
+          <a class="button primary" href="mailto:support@swiftterm.app?subject=SwiftTerm%20FAQ">Ask support</a>
+          <a class="button secondary" href="privacy.html">Privacy policy</a>
+        </div>
+      </section>
+
+      <section class="answer-grid" aria-label="SwiftTerm frequently asked questions">
+        <article>
+          <span class="scenario-kicker">Product</span>
+          <h2>What is SwiftTerm?</h2>
+          <p>SwiftTerm is a native iPhone and iPad terminal workspace for SSH sessions, SFTP transfers, snippets, local network diagnostics, host management, and privacy-safe support workflows.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Auth</span>
+          <h2>Which SSH authentication methods are live?</h2>
+          <p>The current live SSH path supports password authentication and Ed25519 private-key authentication. RSA keys can be generated, imported, exported, and managed, but live RSA SSH private-key auth remains a deliberate future dependency decision.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Keys</span>
+          <h2>Where do private keys live?</h2>
+          <p>Private SSH key material is stored in Keychain. SwiftTerm also supports host-key review and pinned known-host fingerprints so operators can decide what they trust before connecting.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Shell</span>
+          <h2>Does the local shell run system binaries?</h2>
+          <p>No. The iOS local shell is sandboxed and runs app-owned commands for DNS, TCP reachability, WHOIS/RDAP, TLS checks, subnet math, SSH launch, and guarded Telnet launch. It does not spawn <code>/bin/sh</code> on iOS.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Files</span>
+          <h2>What can SFTP do today?</h2>
+          <p>SwiftTerm supports live SFTP listing, upload, download, delete, rename, create-directory, local Files picker uploads, incoming file staging, and SFTP-backed upload/download sync execution.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Privacy</span>
+          <h2>Does SwiftTerm collect terminal data?</h2>
+          <p>The current build is local-first, has no server-side credential store, and uses opt-in analytics with allow-listed, redacted properties. Diagnostics export is generated locally and omits terminal history by default.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Billing</span>
+          <h2>How do subscriptions work?</h2>
+          <p>SwiftTerm uses Apple In-App Purchase for Pro and Team subscription workflows. Purchase status is processed by Apple and used by the app to unlock premium surfaces.</p>
+        </article>
+        <article>
+          <span class="scenario-kicker">Roadmap</span>
+          <h2>What should not be treated as shipped?</h2>
+          <p>Mosh, production CloudKit sync launch, collaboration backends, marketplace distribution, true delta rsync, guaranteed long-running background transfers, live RSA auth, and production AI execution remain roadmap or account-side work.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Need a deeper answer?</span>
+      <nav aria-label="Footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="whats-new.html">What's New</a>
+        <a href="press.html">Press</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# SwiftTerm Prepares Native SSH and SFTP Workflows for iPhone and iPad
+
+SwiftTerm is preparing a privacy-first iPhone and iPad terminal workspace for operators who need to inspect hosts, transfer files, and run local network checks away from a laptop.
+
+The app combines native terminal sessions, SFTP transfers, command snippets, Keychain-backed key management, known-host review, and sandboxed local diagnostics in a SwiftUI interface built for mobile and iPad workflows.
+
+The current release scope focuses on honest remote-access tooling: password and Ed25519 live SSH authentication, host/key management, SFTP operations, local DNS and reachability checks, privacy controls, diagnostics redaction, and App Store handoff pages under swiftterm.app.
+
+SwiftTerm is local-first. Private SSH key material is stored in Keychain, analytics are opt-in and sanitized, and support reports are designed to avoid passwords, private keys, hostnames, IP addresses, access tokens, and production command output.
+
+Roadmap items such as Mosh, production CloudKit sync launch, collaboration backends, marketplace distribution, true delta rsync, guaranteed long-running background transfers, live RSA authentication, and production AI execution are not presented as shipped features.
+
+Public launch materials are available at https://swiftterm.app/press.html.
+
+Media contact: support@swiftterm.app
+Privacy contact: privacy@swiftterm.app

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">SwiftTerm wordmark</title>
+  <desc id="desc">SwiftTerm wordmark with terminal cursor mark.</desc>
+  <rect width="1200" height="300" rx="36" fill="#071116"/>
+  <rect x="62" y="64" width="168" height="168" rx="38" fill="#007aff"/>
+  <path d="M106 126l41 31-41 31" fill="none" stroke="#f6f3ec" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M158 197h42" fill="none" stroke="#12b886" stroke-width="18" stroke-linecap="round"/>
+  <text x="272" y="166" fill="#f6f3ec" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="88" font-weight="900" letter-spacing="0">SwiftTerm</text>
+  <text x="278" y="218" fill="#aeb8bd" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="32" font-weight="700" letter-spacing="0">Native SSH, SFTP, snippets, and local network checks</text>
+</svg>
