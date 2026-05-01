@@ -18,7 +18,7 @@
   <link rel="canonical" href="https://swiftterm.app/">
   <link rel="icon" href="screenshots/swiftterm-app-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="site.css?v=20260501-fix1">
+  <link rel="stylesheet" href="site.css?v=20260501-rizz2">
 </head>
 <body>
   <div class="shell">
@@ -43,43 +43,28 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">iPhone and iPad terminal client</p>
+          <p class="eyebrow">Command in your hand</p>
           <h1>SwiftTerm</h1>
-          <p class="lede">The mobile incident console for people who need to inspect, transfer, and recover from wherever they are.</p>
+          <h2 class="hero-tagline">SSH, SFTP, and local diagnostics with the lights still on.</h2>
+          <p class="lede">A native iPhone and iPad incident console for people who need to inspect hosts, move files, and recover fast when the laptop is not in reach.</p>
           <div class="button-row">
             <a class="button primary" href="support.html">Get support</a>
-            <a class="button secondary" href="faq.html">Read the FAQ</a>
+            <a class="button secondary" href="press.html">Open press kit</a>
           </div>
           <div class="signal-row" aria-label="SwiftTerm trust signals">
             <span>Keychain-backed keys</span>
             <span>Opt-in telemetry</span>
             <span>Ed25519 live auth</span>
           </div>
+          <div class="hero-metrics" aria-label="SwiftTerm launch proof">
+            <div><strong>SSH</strong><span>sessions and tunnels</span></div>
+            <div><strong>SFTP</strong><span>files and queues</span></div>
+            <div><strong>LAN</strong><span>local diagnostics</span></div>
+          </div>
         </div>
 
-        <div class="device-stage" aria-label="SwiftTerm terminal preview">
-          <div class="device-topline">
-            <img src="screenshots/swiftterm-app-icon.png" width="46" height="46" alt="">
-            <span>production window</span>
-          </div>
-          <div class="terminal-panel">
-            <div class="terminal-bar">
-              <span></span><span></span><span></span>
-              <strong>deploy@swiftterm</strong>
-            </div>
-            <pre><code>$ ssh deploy@staging
-Connected with Ed25519 key
-$ tail -f /var/log/app.log
-200 GET /health
-200 POST /api/releases
-$ sftp uploads
-queued sync - 3 changes</code></pre>
-          </div>
-          <div class="command-strip" aria-label="Quick command set">
-            <span>tail logs</span>
-            <span>sftp upload</span>
-            <span>probe tcp</span>
-          </div>
+        <div class="hero-visual" aria-label="SwiftTerm product preview">
+          <img src="assets/swiftterm-hero-console.png" alt="SwiftTerm iPad and iPhone screenshots composited into a mobile command center scene">
         </div>
       </section>
 

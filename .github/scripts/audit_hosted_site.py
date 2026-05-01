@@ -38,6 +38,7 @@ REQUIRED_FILES = [
     "site.css",
     "site.webmanifest",
     "assets/swiftterm-social-preview.png",
+    "assets/swiftterm-hero-console.png",
     "assets/swiftterm-wordmark.svg",
     "media-kit/swiftterm-media-kit.zip",
     "screenshots/swiftterm-app-icon.png",
@@ -51,6 +52,7 @@ REQUIRED_MEDIA_KIT_MEMBERS = {
     "swiftterm-app-icon-1024.png",
     "swiftterm-wordmark.svg",
     "swiftterm-social-preview.png",
+    "swiftterm-hero-console.png",
     "swiftterm-ipad-workspace.png",
     "swiftterm-iphone-terminal.png",
     "swiftterm-iphone-files.png",
@@ -197,7 +199,7 @@ def check_stylesheet_cache_bust(hosted_root: Path, checks: list[Check]) -> None:
             continue
         parser = parse_html(path)
         stylesheet_refs = [ref for ref in parser.refs if ref.startswith("site.css")]
-        if "site.css?v=20260501-fix1" not in stylesheet_refs:
+        if "site.css?v=20260501-rizz2" not in stylesheet_refs:
             failures.append(page_name)
     add(checks, "HTML pages use cache-busted stylesheet URL", not failures, ", ".join(failures))
 

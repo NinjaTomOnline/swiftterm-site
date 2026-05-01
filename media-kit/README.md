@@ -7,6 +7,7 @@ SwiftTerm is a native iPhone and iPad SSH/SFTP terminal workspace for operators 
 - `swiftterm-app-icon-1024.png`: App icon.
 - `swiftterm-wordmark.svg`: Approved wordmark.
 - `swiftterm-social-preview.png`: Social preview image.
+- `swiftterm-hero-console.png`: Launch hero composite using current product screenshots.
 - `swiftterm-ipad-workspace.png`: iPad workspace screenshot.
 - `swiftterm-iphone-terminal.png`: iPhone terminal screenshot.
 - `swiftterm-iphone-files.png`: iPhone SFTP screenshot.
