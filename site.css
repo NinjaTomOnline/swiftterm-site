@@ -65,6 +65,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
   position: sticky;
   top: 12px;
@@ -82,13 +83,23 @@ img {
   align-items: center;
   gap: 12px;
   min-width: 0;
+  flex: 0 1 auto;
 }
 
-.brand-icon {
+.brand-icon,
+img.brand-icon {
+  flex: 0 0 42px;
   width: 42px;
   height: 42px;
+  min-width: 42px;
+  max-width: 42px;
   border-radius: 8px;
+  object-fit: cover;
   box-shadow: 0 10px 24px rgba(0, 122, 255, 0.22);
+}
+
+.brand span {
+  min-width: 0;
 }
 
 .brand strong,
@@ -108,6 +119,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.nav {
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .nav a,
@@ -277,9 +293,13 @@ h3 {
 }
 
 .device-topline img {
+  flex: 0 0 46px;
   width: 46px;
   height: 46px;
+  min-width: 46px;
+  max-width: 46px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .terminal-panel {

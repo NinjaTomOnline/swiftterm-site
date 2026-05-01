@@ -189,6 +189,19 @@ def check_metadata(hosted_root: Path, checks: list[Check]) -> None:
     add(checks, "canonical, og:url, and og:image match production", not failures, "; ".join(failures))
 
 
+def check_stylesheet_cache_bust(hosted_root: Path, checks: list[Check]) -> None:
+    failures: list[str] = []
+    for page_name in [*PAGES.keys(), "404.html"]:
+        path = hosted_root / page_name
+        if not path.exists():
+            continue
+        parser = parse_html(path)
+        stylesheet_refs = [ref for ref in parser.refs if ref.startswith("site.css")]
+        if "site.css?v=20260501-fix1" not in stylesheet_refs:
+            failures.append(page_name)
+    add(checks, "HTML pages use cache-busted stylesheet URL", not failures, ", ".join(failures))
+
+
 def check_media_kit(hosted_root: Path, checks: list[Check]) -> None:
     zip_path = hosted_root / "media-kit" / "swiftterm-media-kit.zip"
     if not zip_path.exists():
@@ -247,6 +260,7 @@ def run_audit(hosted_root: Path, include_live: bool) -> list[Check]:
     check_required_files(hosted_root, checks)
     check_local_references(hosted_root, checks)
     check_metadata(hosted_root, checks)
+    check_stylesheet_cache_bust(hosted_root, checks)
     check_media_kit(hosted_root, checks)
     check_copy(hosted_root, checks)
     check_forbidden_patterns(hosted_root, checks)
